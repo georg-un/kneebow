@@ -1,10 +1,10 @@
 import unittest
 import numpy as np
 
-from kneebow.kneebow import Rotor
+from kneebow.rotor import Rotor
 
 
-sample_inc = data = np.array([
+sample_inc = np.array([
     [1, 1],
     [2, 2],
     [3, 3],
