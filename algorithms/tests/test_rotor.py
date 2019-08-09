@@ -89,3 +89,7 @@ class TestRotor(unittest.TestCase):
         r = Rotor()
         r.fit_rotate(sample_dec)
         self.assertAlmostEqual(r.get_knee_index(), 7, delta=1)
+
+
+if __name__ == '__main__':
+    unittest.main()

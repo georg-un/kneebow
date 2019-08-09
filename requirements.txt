@@ -1,0 +1,10 @@
+########## Dependencies for distributipy ##########
+###                                             ###
+### To install, run:                            ###
+###      $ pip install -r requirements.txt      ###
+###                                             ###
+###################################################
+
+numpy
+matplotlib
+scikit-learn
