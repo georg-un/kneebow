@@ -13,7 +13,6 @@ class Rotor:
         for the elbow or the max value for the knee.
 
         """
-        pass
         self._data = None
         self._scale = None
         self._scaler = None
