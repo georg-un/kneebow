@@ -10,6 +10,7 @@ setup(
     author_email='georg.unterholzner.coding@gmail.com',
     description='Knee or elbow detection for curves',
     install_requires=['numpy', 'matplotlib', 'scikit-learn'],
+    download_url='https://github.com/georg-un/kneebow/archive/v0.1.0.tar.gz',
     python_requires='>=3.4',
     classifiers=[
         'Development Status :: 4 - Beta',
