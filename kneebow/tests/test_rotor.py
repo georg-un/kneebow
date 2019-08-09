@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 
-from algorithms.kneebow import Rotor
+from kneebow.kneebow import Rotor
 
 
 sample_inc = data = np.array([
