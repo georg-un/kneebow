@@ -31,7 +31,7 @@ class Rotor:
         self._theta = theta
         if scale:
             self._scaler = MinMaxScaler()
-            self._data = self._scaler.fit_transform(data)
+            self._data = self._scaler.fit_transform(self._data)
         if theta is not None:
             self._theta = theta
         else:

@@ -57,11 +57,11 @@ class TestRotor(unittest.TestCase):
 
     def test_scaling(self):
         r = Rotor()
-        r.fit_rotate(sample_inc)
-        self.assertLessEqual(r._data[:, 0].max(), 1)
-        self.assertLessEqual(r._data[:, 1].max(), 1)
-        self.assertGreaterEqual(r._data[:, 0].min(), 0)
-        self.assertGreaterEqual(r._data[:, 1].min(), 0)
+        r.fit_rotate(sample_inc, scale=True, theta=0)
+        self.assertLessEqual(r._data[:, 0].max(), 1.00000001)
+        self.assertLessEqual(r._data[:, 1].max(), 1.00000001)
+        self.assertGreaterEqual(r._data[:, 0].min(), -0.00000001)
+        self.assertGreaterEqual(r._data[:, 1].min(), -0.00000001)
 
     def test_fit_rotate_params(self):
         r = Rotor()
