@@ -1,5 +1,8 @@
 from setuptools import setup
 
+with open('README.md') as f:
+    long_description = f.read()
+
 setup(
     name='kneebow',
     version='0.1.0',
@@ -9,6 +12,8 @@ setup(
     author='Georg Unterholzner',
     author_email='georg.unterholzner.coding@gmail.com',
     description='Knee or elbow detection for curves',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     install_requires=['numpy', 'matplotlib', 'scikit-learn'],
     download_url='https://github.com/georg-un/kneebow/archive/v0.1.0.tar.gz',
     python_requires='>=3.4',
