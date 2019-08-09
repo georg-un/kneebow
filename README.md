@@ -12,7 +12,13 @@ kneebow builds upon a very simple idea: if we want to find the elbow of a curve,
 
 ## Installation
 
-You can install the package with the following command:
+You can install the package via pip:
+
+```sh
+pip install kneebow
+```
+
+Alternatively, you can also install the latest version from GitHub:
 
 ```sh
 pip install git+https://github.com/georg-un/kneebow.git
