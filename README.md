@@ -10,6 +10,8 @@ Find the knee of a curve or the elbow of a curve.
 
 kneebow builds upon a very simple idea: if we want to find the elbow of a curve, we can simply rotate the data so that curve looks down and then take the minimum value. If we want to find the knee of the curve, we take the maximum value instead. It's as simple as that.
 
+For more info, see [this answer](https://datascience.stackexchange.com/a/57135/67412) on the Data Science StackExchange.
+
 ## Installation
 
 You can install the package via pip:
