@@ -58,6 +58,31 @@ rotor.plot_elbow()
 ```
 ![rotor_plot](https://raw.githubusercontent.com/georg-un/kneebow/master/assets/rotor_plot.png)
 
+<!-- CITATION -->
+## Citation
+
+If you need to cite this package, you can do so as follows:
+
+### BibTeX
+
+```
+@misc{kneebow,
+  title={ {kneebow}: Knee or elbow detection for curves},
+  author={Unterholzner Georg},
+  year={2019},
+  howpublished={\url{https://github.com/georg-un/kneebow}},
+}
+```
+
+**Note:** Make sure to import the `url` package with: `\usepackage{url}`.
+
+### APA/Harvard
+
+```text
+Unterholzner Georg. (2019). kneebow: Knee or elbow detection for curves. https://github.com/georg-un/kneebow.
+```
+
+
 <!-- LICENSE -->
 ## License
 
