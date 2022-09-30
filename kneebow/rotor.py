@@ -44,7 +44,8 @@ class Rotor:
 
         :return:  integer. Index of the elbow.
         """
-        return np.where(self._data == self._data.min())[0][0]
+        # only uses y values to calc min
+        return np.where(self._data[:, 1] == self._data[:, 1].min())[0][0]
 
     def get_knee_index(self):
         """
@@ -52,7 +53,8 @@ class Rotor:
 
         :return:  integer. Index of the knee.
         """
-        return np.where(self._data == self._data.max())[0][0]
+        # only uses y values to calc max
+        return np.where(self._data[:, 1] == self._data[:, 1].max())[0][0]
 
     def plot_elbow(self):
         """
@@ -63,7 +65,8 @@ class Rotor:
             data = self._scaler.inverse_transform(data)
         elb_idx = self.get_elbow_index()
         plt.scatter(data[:, 0], data[:, 1])
-        plt.vlines(data[elb_idx, 0], ymin=data[:, 1].min(), ymax=data[:, 1].max(), colors='red', linestyles='--')
+        plt.vlines(data[elb_idx, 0], ymin=data[:, 1].min(),
+                   ymax=data[:, 1].max(), colors='red', linestyles='--')
 
     def plot_knee(self):
         """
@@ -74,7 +77,8 @@ class Rotor:
             data = self._scaler.inverse_transform(data)
         elb_idx = self.get_knee_index()
         plt.scatter(data[:, 0], data[:, 1])
-        plt.vlines(data[elb_idx, 0], ymin=data[:, 1].min(), ymax=data[:, 1].max(), colors='red', linestyles='--')
+        plt.vlines(data[elb_idx, 0], ymin=data[:, 1].min(),
+                   ymax=data[:, 1].max(), colors='red', linestyles='--')
 
     def _set_theta_auto(self):
         """
