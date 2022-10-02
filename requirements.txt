@@ -1,4 +1,4 @@
-########## Dependencies for distributipy ##########
+########## Dependencies for kneebow ##########
 ###                                             ###
 ### To install, run:                            ###
 ###      $ pip install -r requirements.txt      ###
